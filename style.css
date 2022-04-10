@@ -231,6 +231,9 @@ main div:hover:before {
    background: #F1F0F0;
    height: 400px;
  }
+ section{
+   background:#F1F0F0 ;
+ }
 
 
 
@@ -244,5 +247,139 @@ main div:hover:before {
 @media (max-width:585px){
   main div:nth-of-type(n+5){
     display: none;
+  }
+}
+
+footer{
+   padding: 30px;
+   margin: auto;
+   height: 100%;
+   max-width: 790px;
+   
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  max-width: 470px;
+  margin-bottom: 40px;
+  
+}
+.fab, .fas {
+  border: 1px solid black;
+  text-align: center;
+  margin:20px;
+  margin-left: 0;
+  padding: 10px;
+  border-radius: 10px;
+  color:#646464 ;
+  border-color: #646464;
+  
+}
+.fa-facebook-f{
+  margin: 20px;
+  margin-left: 0;
+  padding: 10px;
+  padding-left: 13px;
+  padding-right: 14px;
+}
+.iii{
+  max-width: 380px;
+}
+.forma{
+  max-width:770px;
+}
+input,
+label,
+textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+input,
+textarea {
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-family: arial;
+}
+
+.submit {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  transition: 0.4s;
+  font-weight: bolder;
+  letter-spacing: 8px;
+  margin-top: 50px;
+  padding: 15px;
+}
+.fab{
+  transition: 0.4s;
+}
+.fas{
+  transition: 0.4s;
+}
+
+.fas:hover{
+  cursor: pointer;
+  color: white;
+  background: black;
+  opacity: 0.3;
+}
+.fab:hover{
+  cursor: pointer;
+  color: white;
+  background: black;
+  opacity: 0.3;
+}
+
+.submit:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.contact h2{
+  margin-bottom: 30px;
+}
+@media (min-width:680px){
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .iii{
+    max-width: 200px;
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+  }
+  .forma{
+    max-width:415px;
+    min-width: 414px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .forma div{
+    margin-right: 30px;
+  }
+  input{
+    padding: 10px;
+  }
+  textarea{
+    padding-right: 78px;
+  }
+  /* .submit{
+    ;
+  } */
+}
+
+
+@media (min-width:850px){
+  .iii{
+    max-width: 300px;
   }
 }
